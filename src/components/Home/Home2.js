@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import myImg from "../../Assets/avatar.svg";
+import myImg from "../../Assets/avatar.svg"; // Keep the avatar image
 import Tilt from "react-parallax-tilt";
 import {
   AiFillGithub,
@@ -19,37 +19,29 @@ function Home2() {
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
             <p className="home-about-body">
-              I fell in love with programming and I have at least learnt
-              something, I think… 🤷‍♂️
+              I am an innovative Full Stack Developer with a deep understanding of both front-end and back-end technologies. I excel in creating robust, user-friendly applications and solving complex coding challenges. With a collaborative approach to projects, I aim to enhance team productivity and deliver high-quality results. My goal is to drive digital transformation and elevate user experiences through cutting-edge solutions.
               <br />
-              <br />I am fluent in classics like
+              <br />
+              I have experience working with a variety of technologies including
               <i>
-                <b className="purple"> C++, Javascript and Go. </b>
+                <b className="purple"> HTML/CSS, JavaScript, React.js, Angular, Node.js, Springboot, MongoDB, MySQL</b>
               </i>
               <br />
               <br />
-              My field of Interest's are building new &nbsp;
-              <i>
-                <b className="purple">Web Technologies and Products </b> and
-                also in areas related to{" "}
-                <b className="purple">
-                  Blockchain.
-                </b>
-              </i>
+              Some of my notable projects include:
+              <ul>
+                <li>
+                  <b className="purple">Cyber Risks Analysis and Mitigation Suite:</b> Developed interactive modules for dashboards such as ECS, CAP, VAPT, TIP, and SOC. Led deployment using AWS and Azure DevOps.
+                </li>
+                <li>
+                  <b className="purple">Student Management System:</b> Designed and developed intuitive front-end layouts, improving user engagement and system performance.
+                </li>
+                <li>
+                  <b className="purple">Insurance Policy Management Dashboard:</b> Built responsive dashboards and integrated real-time insurance data using React.js and Angular.
+                </li>
+              </ul>
               <br />
-              <br />
-              Whenever possible, I also apply my passion for developing products
-              with <b className="purple">Node.js</b> and
-              <i>
-                <b className="purple">
-                  {" "}
-                  Modern Javascript Library and Frameworks
-                </b>
-              </i>
-              &nbsp; like
-              <i>
-                <b className="purple"> React.js and Next.js</b>
-              </i>
+              In my free time, I also explore and contribute to open-source projects, applying my skills to real-world problems.
             </p>
           </Col>
           <Col md={4} className="myAvtar">
@@ -62,42 +54,42 @@ function Home2() {
           <Col md={12} className="home-about-social">
             <h1>FIND ME ON</h1>
             <p>
-              Feel free to <span className="purple">connect </span>with me
+              Feel free to <span className="purple">connect</span> with me
             </p>
             <ul className="home-about-social-links">
               <li className="social-icons">
                 <a
-                  href="https://github.com/soumyajit4419"
+                  href="https://github.com/your-github" // Replace with your GitHub URL
                   target="_blank"
                   rel="noreferrer"
-                  className="icon-colour  home-social-icons"
+                  className="icon-colour home-social-icons"
                 >
                   <AiFillGithub />
                 </a>
               </li>
               <li className="social-icons">
                 <a
-                  href="https://twitter.com/Soumyajit4419"
+                  href="https://twitter.com/your-twitter" // Replace with your Twitter URL
                   target="_blank"
                   rel="noreferrer"
-                  className="icon-colour  home-social-icons"
+                  className="icon-colour home-social-icons"
                 >
                   <AiOutlineTwitter />
                 </a>
               </li>
               <li className="social-icons">
                 <a
-                  href="https://www.linkedin.com/in/soumyajit4419/"
+                  href="https://www.linkedin.com/in/suprajagvs/" // Replace with your LinkedIn URL
                   target="_blank"
                   rel="noreferrer"
-                  className="icon-colour  home-social-icons"
+                  className="icon-colour home-social-icons"
                 >
                   <FaLinkedinIn />
                 </a>
               </li>
               <li className="social-icons">
                 <a
-                  href="https://www.instagram.com/soumyajit4419"
+                  href="https://www.instagram.com/your-instagram" // Replace with your Instagram URL
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour home-social-icons"
@@ -112,4 +104,5 @@ function Home2() {
     </Container>
   );
 }
+
 export default Home2;

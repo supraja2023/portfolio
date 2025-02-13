@@ -2,12 +2,11 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import leaf from "../../Assets/Projects/leaf.png";
-import emotion from "../../Assets/Projects/emotion.png";
 import editor from "../../Assets/Projects/codeEditor.png";
-import chatify from "../../Assets/Projects/chatify.png";
-import suicide from "../../Assets/Projects/suicide.png";
 import bitsOfCode from "../../Assets/Projects/blog.png";
+import textAnalyser from  "../../Assets/Projects/textanalyser.PNG"
+import ISP from  "../../Assets/Projects/ISP.PNG"
+
 
 function Projects() {
   return (
@@ -23,12 +22,12 @@ function Projects() {
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={chatify}
+              imgPath={textAnalyser}
               isBlog={false}
-              title="Chatify"
-              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
-              ghLink="https://github.com/soumyajit4419/Chatify"
-              demoLink="https://chatify-49.web.app/"
+              title="Text Analyser"
+              description="A user friendly tool which will help to edit blogs or content.This tool is perfect for bloggers, content writers, or anyone working with text who needs to quickly clean and format content for blogs, articles, or social media posts."
+              ghLink="https://github.com/supraja2023/Text-analyzer"
+              demoLink="https://supraja2023.github.io/Text-analyzer/"
             />
           </Col>
 
@@ -36,10 +35,9 @@ function Projects() {
             <ProjectCard
               imgPath={bitsOfCode}
               isBlog={false}
-              title="Bits-0f-C0de"
-              description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."
-              ghLink="https://github.com/soumyajit4419/Bits-0f-C0de"
-              demoLink="https://blogs.soumya-jit.tech/"
+              title="News-Pigeon"
+              description="As an Avid News Enthusiast I designed News Pigeon  to provide users with the latest news updates from various sources. The platform allows users to explore trending news articles and filter them based on specific categories such as Entertainment, Sports, Politics, Technology, Health, Business, and more. By offering a categorized view, users can easily navigate and access news relevant to their interests."
+              ghLink="https://github.com/supraja2023/News-Pigeon"
             />
           </Col>
 
@@ -47,46 +45,21 @@ function Projects() {
             <ProjectCard
               imgPath={editor}
               isBlog={false}
-              title="Editor.io"
-              description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
-              ghLink="https://github.com/soumyajit4419/Editor.io"
-              demoLink="https://editor.soumya-jit.tech/"              
+              title="Expense-Management-Portal"
+              description="The Expense Management Portal is a comprehensive web application designed to streamline the management and tracking of expenses for my uncle's shop. The platform allows shop workers to upload expense details along with receipts for approval. My uncle, as the manager, has full control to review, approve, or reject submitted expenses. Additionally, the portal provides insightful charts and reports, allowing your uncle to analyze total revenue and expenses categorized by year, type, and approval status (approved or rejected). This will help him efficiently track the financial health of the shop and make informed business decisions."
+              ghLink="https://github.com/supraja2023/expensemanagementfrontend/"         
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={leaf}
+              imgPath={ISP}
               isBlog={false}
-              title="Plant AI"
-              description="Used the plant disease dataset from Kaggle and trained a image classifer model using 'PyTorch' framework using CNN and Transfer Learning with 38 classes of various plant leaves. The model was successfully able to detect diseased and healthy leaves of 14 unique plants. I was able to achieve an accuracy of 98% by using Resnet34 pretrained model."
-              ghLink="https://github.com/soumyajit4419/Plant_AI"
-              demoLink="https://plant49-ai.herokuapp.com/"
+              title="Information Security Portal"
+              description="Designed and developed dynamic dashboards for ECS, CAP, VAPT, TIP, and SOC modules, enhancing user experience and functionality. Built robust server-side applications with Node.js and integrated them with MongoDB for seamless data management. Led deployment on AWS and Azure DevOps, ensuring scalability and secure hosting. Developed the ECS module for risk assessment, threat actor identification, and remediation plans. Created the CAP module to automate compliance checks and improve reporting efficiency, alongside real-time SOC dashboards for monitoring security incidents."       
             />
           </Col>
 
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={suicide}
-              isBlog={false}
-              title="Ai For Social Good"
-              description="Using 'Natural Launguage Processing' for the detection of suicide-related posts and user's suicide ideation in cyberspace  and thus helping in sucide prevention."
-              ghLink="https://github.com/soumyajit4419/AI_For_Social_Good"
-              // demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" <--------Please include a demo link here
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={emotion}
-              isBlog={false}
-              title="Face Recognition and Emotion Detection"
-              description="Trained a CNN classifier using 'FER-2013 dataset' with Keras and tensorflow backened. The classifier sucessfully predicted the various types of emotions of human. And the highest accuracy obtained with the model was 60.1%.
-              Then used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person."
-              ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
-              // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here 
-            />
-          </Col>
         </Row>
       </Container>
     </Container>
